@@ -1,3 +1,15 @@
+#pragma once
+
 #include <string>
 
-std::string pretty_print();
+class HeatFlow;
+
+class HeatFlowPrinter
+{
+private:
+    HeatFlow &flow;
+
+public:
+    HeatFlowPrinter(HeatFlow &flow);
+    void pretty_print();
+};
